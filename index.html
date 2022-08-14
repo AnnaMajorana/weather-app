@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App 🌞</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/f2a8e0d2b5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-body">
+        <div class="card">
+          <h1 id="city">Birmingham</h1>
+          <div class="date" id="right-now-date">Monday, 13 June</div>
+          <br />
+          <div class="row">
+            <div class="col-md-3 today">
+              Today
+              <span class="tepmerature1">
+                <span id="temperature">23</span><a id="celsius">°C</a
+                ><a id="fahrenheit"></a>
+              </span>
+            </div>
+            <div class="tomorrow col-md-2">
+              Tomorrow 🌧️<br />
+              <span class="tepmerature2"> 16°C/12°C</span>
+            </div>
+            <div class="wednesday col-md-2">
+              Wednesday ⛈️<br />
+              <span class="tepmerature3">12°C/10°C</span>
+            </div>
+            <div class="thursday col-md-2">
+              Thursday ☀️ <br />
+              <span class="tepmerature4">27°C/20°C</span>
+            </div>
+          </div>
+          <div class="dopinfo">
+            Precipitation: 0% <br />Humidity: <span id="humidity"> 12 </span>% <br />
+            Wind: <span id="wind">12</span> mph
+          </div>
+          <form id="search-form">
+            <input
+              tipe="text"
+              placeholder="Enter your city"
+              autofocus="on"
+              class="form"
+              id="city-input"
+            />
+            <button id="current" class="current">Current</button>
+          </form>
+          <br />
+          <div class="citys row">
+            <div class="col-3">London</div>
+            <div class="col-3">Birmingham</div>
+            <div class="col-3">Kyiv</div>
+            <div class="col-3">Leeds</div>
+      </div>
+    </div>
+    <div class="codby">Coded by <span class="me">Hanna Maior</span></div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
