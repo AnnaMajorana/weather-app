@@ -1,8 +1,16 @@
 //Current date and time
 
-let now = new Date();
-
 function formatDate() {
+  let date = new Date();
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
   let days = [
     "Sunday",
     "Monday",
@@ -10,31 +18,21 @@ function formatDate() {
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday"
+    "Saturday",
   ];
-  let day = days[now.getDay()];
-  let months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-  ];
-  let month = months[now.getMonth()];
-  let number = now.getDate();
-  let hours = now.getHours();
-  let minutes = now.getMinutes();
-  let date = `${day}, ${month} ${number}, ${hours}:${minutes}`;
-
-  return date;
+  let day = days[date.getDay()];
+  return `${day} ${hours}:${minutes}`;
 }
+
+function formatDay() {
+  let date = new Date();
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
+
+
 
 //Ttemperature to real data
 

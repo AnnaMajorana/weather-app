@@ -24,14 +24,15 @@
       <div class="card-body">
         <div class="card">
           <h1 id="city">Birmingham</h1>
-          <div class="date" id="right-now-date">Monday, 13 June</div>
+          <div class="date" id="right-now-date">Monday, 00:00</div>
+          <div class="description" id="description">Clear sky</div>
           <br />
           <div class="row">
             <div class="col-md-3 today">
-              Today </br>
+              Today </br> <img src="" id="icon" class="weather-icon" />
               <span class="tepmerature1">
-                <span id="temperature">23 </span><a class="celsius" id="celsius" href="#">°C</a
-                >|<a class="fahrenheit" id="fahrenheit" href="#">°F</a>
+                <span id="temperature">23 </span><a class="celsius" id="celsius" href="#">°C </a
+                >|<a class="fahrenheit" id="fahrenheit" href="#"> °F</a>
               </span>
             </div>
             <div class="tomorrow col-md-2">
@@ -48,7 +49,7 @@
             </div>
           </div>
           <div class="dopinfo">
-            Precipitation: 0% <br />Humidity: <span id="humidity"> 12 </span>% <br />
+            Precipitation: <span id="precipitation">0%</span> <br />Humidity: <span id="humidity"> 12 </span>% <br />
             Wind: <span id="wind">12</span> mph
           </div>
           <form id="search-form">
@@ -59,7 +60,7 @@
               class="form"
               id="city-input"
             />
-            <button id="current" class="current">Current</button>
+            <button id="submit" class="submit">Submit</button>
           </form>
           <br />
           <div class="citys row">
