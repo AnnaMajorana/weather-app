@@ -2,7 +2,7 @@
     margin: 30px auto;
     box-sizing: border-box;
     width: 630px;
-    height: 475px;
+    height: 435px;
     background-color: #F8F8F8;
     display: block;
 }
@@ -123,12 +123,6 @@ h1 {
 
 .me {
     color: #FF3399;
-}
-.celsius,
-.fahrenheit {
-    font-size: 14px;
-    color: gray;
-    text-decoration: none;
 }
 .celsius,
 .fahrenheit:hover {
